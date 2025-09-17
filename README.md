@@ -1,6 +1,5 @@
 # Deduplication
-Remove redundant nodes from the configuration
-Define utility functions using `const` to remove duplicates from the `proxies` array in `config.proxies` and `proxy-groups`, as well as the outermost `rules` array.
+Using `const` to remove duplicates from the `proxies` array in `config.proxies` and `proxy-groups`, as well as the outermost `rules` array.
 
 1. Scan `config.proxies`, using `server:port`as the unique identifier, and retain only the first occurrence of each entry.
 
