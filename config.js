@@ -9,7 +9,6 @@ const foreignNameservers = [
   "https://77.88.8.8/dns-query", //YandexDNS
   "https://1.1.1.1/dns-query", // CloudflareDNS
   "https://8.8.4.4/dns-query", // GoogleDNS  
-
 ];
 // DNS配置
 const dnsConfig = {
@@ -216,7 +215,7 @@ const groupBaseOption = {
   "hidden": false
 };
 
-// 程序入口
+// 主程序
 function main(config) {
   const proxyCount = config?.proxies?.length ?? 0;
   const proxyProviderCount =
@@ -240,7 +239,7 @@ function main(config) {
       "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"
     },
   //去除延迟选优，若保留则还需在策略组添加
-   /* {
+  /*{
       ...groupBaseOption,
       "name": "延迟选优",
       "type": "url-test",
@@ -386,6 +385,3 @@ function main(config) {
   // 返回修改后的配置
   return config;
 }
-
-
-
