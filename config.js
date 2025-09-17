@@ -249,22 +249,26 @@ function main(config) {
       "filter": "^(?!.*(官网|套餐|流量|异常|剩余)).*$",
       "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/speed.svg"
     },
+    
+    //根据域名进行节点分流，适合风控场景
     {
       ...groupBaseOption,
-      "name": "负载均衡(散列)",//根据域名进行节点分流，适合风控场景
+      "name": "负载均衡(散列)",
       "type": "load-balance",
       "strategy": "consistent-hashing",
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/merry_go.svg"
     },
+    //多节点并发叠加网速
     {
       ...groupBaseOption,
-      "name": "负载均衡(轮询)",//多节点并发叠加网速
+      "name": "负载均衡(轮询)",
       "type": "load-balance",
       "strategy": "round-robin",
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/balance.svg"
     },*/
+    
     {
       ...groupBaseOption,
       "name": "故障转移",
