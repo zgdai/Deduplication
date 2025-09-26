@@ -52,7 +52,7 @@ const dnsConfig = {
 const ruleProviderCommon = {
   "type": "http",
   "format": "yaml",
-  "interval": 86400
+  //"interval": 86400
 };
 // 规则集配置
 const ruleProviders = {
