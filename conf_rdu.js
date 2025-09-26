@@ -178,12 +178,12 @@ const rules = [
   "DOMAIN-SUFFIX,gstatic.com,节点选择", // Google静态资源
   "DOMAIN-SUFFIX,xn--ngstr-lra8j.com,节点选择", // Google Play下载服务
   "DOMAIN-SUFFIX,github.io,节点选择", // Github Pages
-  "DOMAIN,v2rayse.com,节点选择", // V2rayse节点工具
+  "DOMAIN,v2rayse.com,全局直连", // V2rayse节点工具
   // Loyalsoldier 规则集
   "RULE-SET,applications,全局直连",
   "RULE-SET,private,全局直连",
   "RULE-SET,reject,广告拦截",
-  "RULE-SET,icloud,微软服务",
+  "RULE-SET,icloud,iCloud",
   "RULE-SET,apple,苹果服务",
   "RULE-SET,YouTube,YouTube",
   "RULE-SET,Netflix,Netflix",
@@ -207,12 +207,12 @@ const rules = [
 ];
 // 代理组通用配置
 const groupBaseOption = {
-  "interval": 86400,
+  /*"interval": 86400,
   "timeout": 3000,
   "url": "https://www.google.com/generate_204",
   "lazy": true,
   "max-failed-times": 3,
-  "hidden": false
+  "hidden": false */
 };
 
 // 主程序
@@ -267,8 +267,7 @@ function main(config) {
       "strategy": "round-robin",
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/balance.svg"
-    },*/
-    
+    },
     {
       ...groupBaseOption,
       "name": "故障转移",
@@ -276,7 +275,7 @@ function main(config) {
       "include-all": true,
       "filter": "^(?!.*(官网|套餐|流量|异常|剩余)).*$",
       "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/ambulance.svg"
-    },
+    },*/
     {
       ...groupBaseOption,
       "name": "谷歌服务",
@@ -319,7 +318,7 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "微软服务",
+      "name": "iCloud",
       "type": "select",
       "proxies": ["全局直连", "节点选择"],// "延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
       "include-all": true,
