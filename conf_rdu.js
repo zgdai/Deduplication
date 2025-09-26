@@ -233,7 +233,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "节点选择",
       "type": "select",
-      "proxies": ["故障转移"],// "延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
+      "proxies": [],//"故障转移", "延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
       "include-all": true,
       "filter": "^(?!.*(官网|套餐|流量|异常|剩余)).*$",
       "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"
@@ -280,7 +280,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "谷歌服务",
       "type": "select",
-      "proxies": ["节点选择","故障转移","全局直连"],// "延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
+      "proxies": ["节点选择","全局直连"],// "故障转移","延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/google.svg"
     },
@@ -288,7 +288,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "YouTube",
       "type": "select",
-      "proxies": ["节点选择","故障转移","全局直连"],// "延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
+      "proxies": ["节点选择","全局直连"],//"故障转移","延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/youtube.svg"
     },
@@ -296,7 +296,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "Netflix",
       "type": "select",
-      "proxies": ["节点选择","故障转移", "全局直连"],// "延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
+      "proxies": ["节点选择","全局直连"],//"故障转移","延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png"
     },
@@ -304,7 +304,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "电报消息",
       "type": "select",
-      "proxies": ["节点选择","故障转移", "全局直连"],// "延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
+      "proxies": ["节点选择","全局直连"],// "故障转移","延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/telegram.svg"
     },
@@ -313,7 +313,7 @@ function main(config) {
       "name": "AI",
       "type": "select",
       "include-all": true,
-      "proxies": ["节点选择","故障转移"],//"负载均衡(散列)"
+      "proxies": ["节点选择"],//"负载均衡(散列)","故障转移"
       "icon": "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Copilot.png"
     },
     {
@@ -328,7 +328,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "苹果服务",
       "type": "select",
-      "proxies": ["节点选择","故障转移","全局直连"],// "延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
+      "proxies": ["节点选择","全局直连"],// "故障转移","延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/apple.svg"
     },
@@ -345,7 +345,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "哔哩哔哩港澳台",
       "type": "select",
-      "proxies": ["全局直连", "节点选择","故障转移"],// "延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
+      "proxies": ["全局直连","节点选择"],//"故障转移","延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
       "include-all": true,
       "filter": "^(?!.*(官网|套餐|流量|异常|剩余)).*$",
       "icon": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/icon/bilibili.svg"
@@ -354,7 +354,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "Spotify",
       "type": "select",
-      "proxies": ["节点选择","故障转移","全局直连"],// "延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
+      "proxies": ["节点选择","全局直连"],//"故障转移","延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/icon/spotify.svg"
     },
@@ -369,7 +369,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "全局直连",
       "type": "select",
-      "proxies": ["DIRECT", "节点选择","故障转移"],// "延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
+      "proxies": ["DIRECT", "节点选择"],//"故障转移","延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/link.svg"
     },
@@ -384,7 +384,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "漏网之鱼",
       "type": "select",
-      "proxies": ["节点选择","故障转移","全局直连"],// "延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
+      "proxies": ["节点选择","全局直连"],//"故障转移","延迟选优", "负载均衡(散列)", "负载均衡(轮询)"
       "include-all": true,
       "filter": "^(?!.*(官网|套餐|流量|异常|剩余)).*$",
       "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/fish.svg"
