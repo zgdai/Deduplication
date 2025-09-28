@@ -209,7 +209,7 @@ const rules = [
 const groupBaseOption = {
   "interval": 86400,
   "timeout": 3000,
-  "url": "https://www.google.com/generate_204",
+  "url": "http://connectivitycheck.platform.hicloud.com/generate_204",//华为云测速
   "lazy": true,
   "max-failed-times": 3,
   "hidden": false 
