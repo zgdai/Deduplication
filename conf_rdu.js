@@ -207,9 +207,9 @@ const rules = [
 ];
 // 代理组通用配置
 const groupBaseOption = {
+  "url": "http://connectivitycheck.platform.hicloud.com/generate_204",//华为云测速
   /*"interval": 86400,
   "timeout": 3000,
-  "url": "https://www.google.com/generate_204",
   "lazy": true,
   "max-failed-times": 3,
   "hidden": false */
